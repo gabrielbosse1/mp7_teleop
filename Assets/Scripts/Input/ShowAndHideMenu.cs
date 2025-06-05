@@ -38,10 +38,10 @@ public class ShowAndHideMenu : MonoBehaviour
         if (show)
         {
             // Move the menu to the current position of the VR controller
-            menu.transform.position = OVRInput.GetLocalControllerPosition(controller);
+            transform.position = OVRInput.GetLocalControllerPosition(controller);
 
             // Rotate the menu to match the current rotation of the VR controller
-            menu.transform.rotation = OVRInput.GetLocalControllerRotation(controller);
+            transform.rotation = OVRInput.GetLocalControllerRotation(controller);
         }
     }
 }
